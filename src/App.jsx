@@ -121,11 +121,7 @@ function App() {
       {selectedCity && selectedCountry && selectedState && (
         <div className={styles.selectedDescription}>
           <span className={styles.selectTitle}>
-            You selected
-            <span className={styles.cityTitle}>{selectedCountry}, </span>
-            <span>
-              {selectedState}, {selectedCity}
-            </span>
+            You selected {selectedCountry}, {selectedState}, {selectedCity}
           </span>
         </div>
       )}
